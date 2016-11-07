@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE module PUBLIC
+		"Devocative/Demeter Module"
+		"http://www.devocative.org/dtd/demeter-module.dtd">
+
+<module
+		shortName="${ModuleShortName}"
+		mainClass="${package}.module.${ModuleName}DModule"
+		mainResource="${package}.web.${ModuleName}DModule"
+		configKeysClass="${package}.${ModuleName}ConfigKey">
+
+	<entities>
+	</entities>
+
+	<tasks>
+	</tasks>
+
+	<dPages>
+	</dPages>
+</module>

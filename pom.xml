@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.devocative</groupId>
+	<artifactId>dmodule-archetype</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.0.1</version>
+				<configuration>
+					<includeEmptyDirs>true</includeEmptyDirs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!--
+
+	mvn archetype:generate -DarchetypeGroupId=org.devocative -DarchetypeArtifactId=dmodule-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=ir.fanap -DartifactId=test -Dpackage=ir.fanap.test -DModuleName=Test -DModuleShortName=TST -Dversion=1.0-SNAPSHOT
+
+	-->
+
+</project>
