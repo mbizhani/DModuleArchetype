@@ -5,6 +5,8 @@
 		"http://www.devocative.org/dtd/devolcano-metadata.dtd">
 
 <meta>
+	<filterClass>targetClass.entity</filterClass>
+
 	<classes>
 
 	</classes>
