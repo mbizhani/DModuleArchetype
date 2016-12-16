@@ -130,7 +130,7 @@
 				</executions>
 			</plugin>
 
-			<!-- Devolcano -->
+			<!-- Demeter Helper Plugin -->
 			<plugin>
 				<groupId>org.devocative</groupId>
 				<artifactId>demeter-maven-plugin</artifactId>

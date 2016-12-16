@@ -2,8 +2,6 @@ package ${package};
 
 import org.devocative.demeter.imodule.DModuleException;
 
-import java.util.Collections;
-import java.util.List;
 
 public class ${ModuleName}Exception extends DModuleException {
 	private static final long serialVersionUID = 1L;

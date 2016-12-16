@@ -17,7 +17,7 @@
 
 	<packageMap>
 		<from pkg="${package}.entity" includeSubPackages="false">
-			<to pkgReplace="entity:vo" generatorRef="FVO" genDir="common/src/main/java"/>
+			<to pkgReplace="entity:vo.filter" generatorRef="FVO" genDir="common/src/main/java"/>
 
 			<to pkgReplace="entity:iservice" generatorRef="ServiceI" genDir="common/src/main/java"/>
 			<to pkgReplace="entity:service" generatorRef="ServiceM" genDir="service/src/main/java"/>

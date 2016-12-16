@@ -2,16 +2,19 @@ package ${package};
 
 import org.devocative.adroit.IConfigKey;
 
-import java.util.Arrays;
 import java.util.List;
 
 public enum ${ModuleName}ConfigKey implements IConfigKey {
 	//UseEqualOnUpperBound("mts.range.equal.upper", false, Arrays.asList(true, false)),
 	;
+	// ------------------------------
+
 	private String key;
 	private boolean validate = false;
 	private Object defaultValue;
 	private List<?> possibilities;
+
+	// ------------------------------
 
 	${ModuleName}ConfigKey(String key) {
 		this(false, key, null);
@@ -32,6 +35,8 @@ public enum ${ModuleName}ConfigKey implements IConfigKey {
 		this.possibilities = possibilities;
 	}
 
+	// ---------------
+
 	${ModuleName}ConfigKey(String key, Object defaultValue) {
 		this(key, defaultValue, null);
 	}
@@ -42,6 +47,8 @@ public enum ${ModuleName}ConfigKey implements IConfigKey {
 		this.defaultValue = defaultValue;
 		this.possibilities = possibilities;
 	}
+
+	// ------------------------------
 
 	@Override
 	public String getKey() {
@@ -62,5 +69,4 @@ public enum ${ModuleName}ConfigKey implements IConfigKey {
 	public List<?> getPossibleValues() {
 		return possibilities;
 	}
-
 }
