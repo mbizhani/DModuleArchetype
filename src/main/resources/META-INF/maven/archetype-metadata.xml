@@ -9,14 +9,20 @@
 	<requiredProperties>
 		<requiredProperty key="ModuleName"/>
 		<requiredProperty key="ModuleShortName"/>
+		<requiredProperty key="GitIgnore">
+			<defaultValue>.gitignore</defaultValue>
+		</requiredProperty>
 	</requiredProperties>
 
 	<fileSets>
-		<fileSet encoding="UTF-8">
+		<fileSet filtered="true">
 			<directory></directory>
 			<includes>
-				<include>.gitignore</include>
+				<include>*</include>
 			</includes>
+			<excludes>
+				<exclude>pom.xml</exclude>
+			</excludes>
 		</fileSet>
 
 		<fileSet filtered="true" packaged="false" encoding="UTF-8">
@@ -31,6 +37,16 @@
 	<modules>
 		<module id="common" name="common" dir="common">
 			<fileSets>
+				<fileSet filtered="true">
+					<directory></directory>
+					<includes>
+						<include>*</include>
+					</includes>
+					<excludes>
+						<exclude>pom.xml</exclude>
+					</excludes>
+				</fileSet>
+
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
 					<includes>
@@ -42,6 +58,16 @@
 
 		<module id="module" name="module" dir="module">
 			<fileSets>
+				<fileSet filtered="true">
+					<directory></directory>
+					<includes>
+						<include>*</include>
+					</includes>
+					<excludes>
+						<exclude>pom.xml</exclude>
+					</excludes>
+				</fileSet>
+
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
 					<includes>
@@ -60,6 +86,16 @@
 
 		<module id="service" name="service" dir="service">
 			<fileSets>
+				<fileSet filtered="true">
+					<directory></directory>
+					<includes>
+						<include>*</include>
+					</includes>
+					<excludes>
+						<exclude>pom.xml</exclude>
+					</excludes>
+				</fileSet>
+
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
 					<includes>
@@ -78,6 +114,16 @@
 
 		<module id="web" name="web" dir="web">
 			<fileSets>
+				<fileSet filtered="true">
+					<directory></directory>
+					<includes>
+						<include>*</include>
+					</includes>
+					<excludes>
+						<exclude>pom.xml</exclude>
+					</excludes>
+				</fileSet>
+
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
 
