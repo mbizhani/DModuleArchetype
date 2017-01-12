@@ -9,14 +9,14 @@
 		<![CDATA[
 			def params = [
 				moduleShortName : "${ModuleShortName}".toLowerCase(),
-				ajaxEditColumn : false,
+				ajaxEditColumn : true,
 				iconClass : ${package}.web.${ModuleName}Icon
 			]
 		]]>
 	</pre>
 
 	<packageMap>
-		<from pkg="${package}.entity" includeSubPackages="false">
+		<from pkg="${package}.entity" includeSubPackages="true">
 			<to pkgReplace="entity:vo.filter" generatorRef="FVO" genDir="common/src/main/java"/>
 
 			<to pkgReplace="entity:iservice" generatorRef="ServiceI" genDir="common/src/main/java"/>
@@ -35,7 +35,7 @@
 		<volcano name="FVO">
 			<precondition>
 				<![CDATA[
-				targetClass.ok && targetClass.entity
+				targetClass.hasFVO && targetClass.entity
 				]]>
 			</precondition>
 			<template file="/templates/FVO.gsp"
@@ -78,7 +78,7 @@
 		<volcano name="ListH">
 			<precondition>
 				<![CDATA[
-				targetClass.ok && targetClass.entity
+				targetClass.hasList && targetClass.entity
 				]]>
 			</precondition>
 			<template file="/templates/ListH.gsp"
@@ -92,7 +92,7 @@
 		<volcano name="ListJ">
 			<precondition>
 				<![CDATA[
-				targetClass.ok && targetClass.entity
+				targetClass.hasList && targetClass.entity
 				]]>
 			</precondition>
 			<template file="/templates/ListJ.gsp"
@@ -106,7 +106,7 @@
 		<volcano name="FormH">
 			<precondition>
 				<![CDATA[
-				targetClass.ok && targetClass.entity
+				targetClass.hasForm && targetClass.entity
 				]]>
 			</precondition>
 			<template file="/templates/FormH.gsp"
@@ -120,7 +120,7 @@
 		<volcano name="FormJ">
 			<precondition>
 				<![CDATA[
-				targetClass.ok && targetClass.entity
+				targetClass.hasForm && targetClass.entity
 				]]>
 			</precondition>
 			<template file="/templates/FormJ.gsp"

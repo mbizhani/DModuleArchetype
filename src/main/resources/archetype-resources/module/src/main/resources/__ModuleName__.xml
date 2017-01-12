@@ -17,5 +17,9 @@
 	</tasks>
 
 	<dPages>
+		<dPage type=""
+			   title="KEY:"
+			   uri="/"
+			   inMenu=""/>
 	</dPages>
 </module>
