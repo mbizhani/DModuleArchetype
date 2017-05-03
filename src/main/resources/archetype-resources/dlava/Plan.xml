@@ -8,9 +8,10 @@
 	<pre>
 		<![CDATA[
 			def params = [
-				moduleShortName : "${ModuleShortName}".toLowerCase(),
-				ajaxEditColumn : true,
-				iconClass : ${package}.web.${ModuleName}Icon
+				moduleShortName : "${ModuleShortName}",
+				ajaxEditColumn  : true,
+				iconClass       : ${package}.web.${ModuleName}Icon,
+				privilegeClass  : ${package}.${ModuleName}PrivilegeKey
 			]
 		]]>
 	</pre>

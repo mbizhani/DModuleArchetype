@@ -50,7 +50,15 @@
 				<fileSet filtered="true" packaged="true" encoding="UTF-8">
 					<directory>src/main/java</directory>
 					<includes>
-						<include>**/**</include>
+						<include>**/entity</include>
+						<include>**/*.java</include>
+					</includes>
+				</fileSet>
+
+				<fileSet filtered="true" packaged="false" encoding="UTF-8">
+					<directory>src/main/java</directory>
+					<includes>
+						<include>sql/*</include>
 					</includes>
 				</fileSet>
 			</fileSets>

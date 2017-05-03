@@ -5,10 +5,11 @@
 		"http://www.devocative.org/dtd/demeter-module.dtd">
 
 <module
-		shortName="${ModuleShortName}"
+		shortName="${ModuleShortName.toUpperCase()}"
 		mainClass="${package}.module.${ModuleName}DModule"
 		mainResource="${package}.web.${ModuleName}DModule"
-		configKeysClass="${package}.${ModuleName}ConfigKey">
+		configKeyClass="${package}.${ModuleName}ConfigKey"
+		privilegeKeyClass="${package}.${ModuleName}PrivilegeKey">
 
 	<entities>
 	</entities>
@@ -20,6 +21,8 @@
 		<dPage type=""
 			   title="KEY:"
 			   uri="/"
-			   inMenu=""/>
+			   inMenu=""
+			   roles="Root|Admin|User"
+				/>
 	</dPages>
 </module>

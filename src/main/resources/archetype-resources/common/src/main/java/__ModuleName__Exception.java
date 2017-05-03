@@ -20,6 +20,6 @@ public class ${ModuleName}Exception extends DModuleException {
 
 	// Main Constructor
 	public ${ModuleName}Exception(${ModuleName}ErrorCode errorCode, String errorParameter, Throwable cause) {
-		super("${ModuleShortName}", errorCode, errorParameter, cause);
+		super("${ModuleShortName.toUpperCase()}", errorCode, errorParameter, cause);
 	}
 }
