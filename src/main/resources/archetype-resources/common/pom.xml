@@ -25,12 +25,7 @@
 	<build>
 		<resources>
 			<resource>
-				<filtering>false</filtering>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>sql/*.sql</include>
-					<include>sql/*_versions.txt</include>
-				</includes>
+				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
 	</build>

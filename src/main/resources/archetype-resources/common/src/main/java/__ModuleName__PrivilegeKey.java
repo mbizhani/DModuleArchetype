@@ -3,7 +3,8 @@ package ${package};
 import org.devocative.demeter.entity.IPrivilegeKey;
 
 public enum ${ModuleName}PrivilegeKey implements IPrivilegeKey {
-	;
+	BookAdd, BookEdit;
+
 	private String name;
 
 	@Override

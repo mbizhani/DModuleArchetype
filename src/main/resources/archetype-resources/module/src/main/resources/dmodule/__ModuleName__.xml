@@ -6,23 +6,29 @@
 
 <module
 		shortName="${ModuleShortName.toUpperCase()}"
-		mainClass="${package}.module.${ModuleName}DModule"
 		mainResource="${package}.web.${ModuleName}DModule"
 		configKeyClass="${package}.${ModuleName}ConfigKey"
 		privilegeKeyClass="${package}.${ModuleName}PrivilegeKey">
 
 	<entities>
+		<entity type="${package}.entity.Book"/>
 	</entities>
 
 	<tasks>
 	</tasks>
 
 	<dPages>
-		<dPage type=""
+		<dPage type="${package}.web.dpage.BookListDPage"
+			   title="Book List"
+			   uri="books"
+			   inMenu="true"
+			   roles="User"/>
+
+		<!--<dPage type=""
 			   title="KEY:"
 			   uri="/"
 			   inMenu=""
 			   roles="Root|Admin|User"
-				/>
+				/>-->
 	</dPages>
 </module>

@@ -41,16 +41,17 @@
 	</scm>
 
 	<properties>
-		<lang.level>1.7</lang.level>
+		<lang.level>1.8</lang.level>
 		<jetty.port>8080</jetty.port>
 		<jetty.context>/ctx</jetty.context>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<d.demeter.ver>1.0-SNAPSHOT</d.demeter.ver>
-		<d.spring.ver>4.3.3.RELEASE</d.spring.ver>
+		<d.diadem.ver>1.2</d.diadem.ver>
+		<d.spring.ver>4.3.12.RELEASE</d.spring.ver>
 		<d.servlet.ver>3.1.0</d.servlet.ver>
 
-		<p.jetty.ver>9.2.15.v20160210</p.jetty.ver>
+		<p.jetty.ver>9.4.6.v20170531</p.jetty.ver>
 		<p.compiler.ver>3.5.1</p.compiler.ver>
 		<p.release.ver>2.5.3</p.release.ver>
 		<p.source.ver>3.0.0</p.source.ver>
@@ -62,6 +63,12 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
