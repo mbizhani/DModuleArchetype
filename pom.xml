@@ -6,7 +6,7 @@
 
 	<groupId>org.devocative</groupId>
 	<artifactId>dmodule-archetype</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -38,7 +38,7 @@
 		<connection>scm:git:https://github.com/mbizhani/DModuleArchetype.git</connection>
 		<developerConnection>scm:git:https://github.com/mbizhani/DModuleArchetype.git</developerConnection>
 		<url>https://github.com/mbizhani/DModuleArchetype.git</url>
-		<tag>dmodule-archetype-1.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
